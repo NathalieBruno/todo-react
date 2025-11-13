@@ -1,0 +1,58 @@
+.addTodo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.addTodo .input {
+  width: 100%;
+  padding: 14px 20px;
+  border: 2px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #f9fafb;
+}
+
+.addTodo .input:focus {
+  outline: none;
+  border-color: #9ca3af;
+  background-color: white;
+}
+
+.addTodo .input::placeholder {
+  color: #9ca3af;
+  font-style: italic;
+}
+
+.addTodo .button {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.addTodo .button:active {
+  transform: scale(0.95);
+}
+
+.addTodo .bottomRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.addTodo .charCounter {
+  font-size: 0.9rem;
+  color: #999;
+}

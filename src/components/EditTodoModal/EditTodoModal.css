@@ -1,0 +1,31 @@
+.editTodo-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.input {
+  padding: 14px 20px;
+  border: 2px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #f3f6f9;
+  transition: all 0.2s ease;
+  width: 100%;
+  color: #6f6868;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #b6bbc3;
+  background-color: white;
+}
+
+.input::placeholder {
+  color: #9ca3af;
+}
+
+.charCounter {
+  font-size: 0.9rem;
+  color: #9ca0a2;
+}

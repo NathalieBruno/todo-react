@@ -1,0 +1,15 @@
+.todoList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.emptyMessage {
+  text-align: center;
+  color: #6b7280;
+  font-style: italic;
+  padding: 3rem 1rem;
+  background: white;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+}

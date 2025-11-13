@@ -1,0 +1,40 @@
+.app-container {
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+
+.app-container main {
+  padding: 0rem 0.8rem 30px;
+  margin: 0 auto;
+}
+
+.floating-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.4);
+  transition: all 0.2s ease;
+  z-index: 100;
+}
+
+.floating-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(255, 107, 107, 0.6);
+}
+
+.floating-btn:active {
+  transform: scale(0.95);
+}

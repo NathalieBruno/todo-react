@@ -1,0 +1,87 @@
+.sortWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.sortWrapper input[type="checkbox"] {
+  width: 1.2em;
+  height: 1.6em;
+  accent-color: #e1e8e5;
+  cursor: pointer;
+}
+
+.sortWrapper label {
+  font-size: 0.9rem;
+  cursor: pointer;
+  user-select: none;
+  font-family: inherit;
+  font-weight: 400;
+}
+.filterBar {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.4rem 0;
+}
+
+.left-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.filterBar button {
+  padding: 0.6rem 1rem;
+  border: 1px solid #adadad;
+  background: white;
+  color: #9d8e8e;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.filterBar button.active {
+  background: #89b5a9;
+  color: white;
+  outline: none;
+}
+
+.search-row {
+  width: 100%;
+  margin-top: 0.75rem;
+  position: relative;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 1rem;
+  top: 35%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  font-size: 1.2rem;
+  pointer-events: none;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 14px 20px 10px 2.5rem;
+  border: none;
+  border-bottom: 2px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+.searchInput:focus {
+  background-color: white;
+  outline: none;
+  border-bottom: 2px solid #a8adb8;
+}
+
+.searchInput::placeholder {
+  color: #9ca3af;
+}
