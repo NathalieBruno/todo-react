@@ -9,6 +9,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
       - name: Install dependencies
-        run: npm install
+        run: npm ci # istället för npm install för att säkerställa en snabbare och säkrare installation
       - name: Run tests
         run: npm test
