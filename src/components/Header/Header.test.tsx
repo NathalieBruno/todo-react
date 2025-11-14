@@ -5,6 +5,6 @@ import Header from "./Header";
 describe("Header", () => {
   test('visar rubriken "Life Planner"', () => {
     render(<Header totalTodos={0} completedTodos={0} />);
-    expect(screen.getByRole("heading", { level: 1, name: /Life Planner/i })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { level: 1, name: /life planner/i })).toBeInTheDocument();
   });
 });
