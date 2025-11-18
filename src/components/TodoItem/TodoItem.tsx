@@ -19,10 +19,10 @@ const TodoItem = ({ todo, onToggle, onEdit, isNewTodo = false, onRequestDelete }
       <input type="checkbox" checked={todo.completed} onChange={() => onToggle(todo.id)} />
       <span className={todo.completed ? "completed" : ""}>{todo.title}</span>
       <div className="buttonGroup">
-        <button onClick={() => onEdit(todo.id)} className="editButton">
+        <button aria-label="edit" onClick={() => onEdit(todo.id)} className="editButton">
           <FaPen />
         </button>
-        <button onClick={() => onRequestDelete && onRequestDelete(todo)} className="deleteButton">
+        <button aria-label="delete" onClick={() => onRequestDelete && onRequestDelete(todo)} className="deleteButton">
           <FaTrash />
         </button>
       </div>
