@@ -13,6 +13,7 @@ export interface TodoListViewProps {
 export interface AddTodoProps {
   onAddTodo: (todo: Todo) => void;
   showToast: (msg: string) => void;
+  onCancel: () => void;
 }
 
 export interface EditTodoProps {

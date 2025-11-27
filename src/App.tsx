@@ -42,7 +42,7 @@ function App() {
       </button>
 
       <Modal isOpen={showAddModal} onClose={() => setShowAddModal(false)} title="Add new todo">
-        <AddTodoForm onAddTodo={handleAddTodo} showToast={showToast} />
+        <AddTodoForm onAddTodo={handleAddTodo} showToast={showToast} onCancel={() => setShowAddModal(false)} />
       </Modal>
       <Toast message={toast.message} visible={toast.visible} />
     </div>

@@ -1,11 +1,11 @@
 import "./AddTodoForm.css";
 import type { Todo } from "../../types/todo";
 import { useState } from "react";
-import { FaPlus } from "react-icons/fa";
+import { FaPlus, FaTimes } from "react-icons/fa";
 import type { AddTodoProps } from "../../types/props";
 import { validateTitle } from "../../utils/validateTitle";
 
-function AddTodoForm({ onAddTodo }: AddTodoProps) {
+function AddTodoForm({ onAddTodo, onCancel }: AddTodoProps) {
   const [todoTitle, setTodoTitle] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -36,6 +36,9 @@ function AddTodoForm({ onAddTodo }: AddTodoProps) {
       <div className="bottomRow">
         <button type="submit" className="button" aria-label="Add todo">
           <FaPlus />
+        </button>
+        <button type="button" onClick={onCancel} className="modal-actionBtn modal-cancelBtn" aria-label="Cancel">
+          <FaTimes />
         </button>
         <div className="charCounter">{todoTitle.length}/30</div>
       </div>
