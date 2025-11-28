@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
 }
 .input {
   padding: 14px 20px;
@@ -25,7 +27,10 @@
   color: #9ca3af;
 }
 
-.charCounter {
+.editTodo-modal .charCounter {
   font-size: 0.9rem;
-  color: #9ca0a2;
+  color: #999;
+  width: 1em;
+  text-align: right;
+  flex-shrink: 0;
 }

@@ -24,7 +24,7 @@ function EditTodoModal({ todo, onSave, onCancel }: EditTodoProps) {
         className="input"
         autoFocus
       />
-      <div className="modal-btnRow" style={{ paddingLeft: "50px" }}>
+      <div className="modal-btnRow">
         <button type="submit" className="modal-actionBtn modal-saveEditBtn" aria-label="Save todo">
           <FaCheck />
         </button>
