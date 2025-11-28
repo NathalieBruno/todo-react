@@ -55,7 +55,7 @@
 .addTodo .charCounter {
   font-size: 0.9rem;
   color: #999;
-  width: 3.5em;
+  width: 1em;
   text-align: right;
   flex-shrink: 0;
 }
