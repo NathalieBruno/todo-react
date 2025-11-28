@@ -19,7 +19,7 @@ function Header({ totalTodos, completedTodos }: HeaderProps) {
       <div className="bubble bubbleS"></div>
       <div className="header-content">
         <h1>
-          Life <br /> Planner
+          LIFE <br /> PLANNER
         </h1>
         <h2>{date}</h2>
         <div className="progress-bar">
