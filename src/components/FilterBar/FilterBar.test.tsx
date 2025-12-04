@@ -14,7 +14,6 @@ describe("FilterBar", () => {
         onSearch={() => {}}
       />
     );
-    // screen.debug();
     expect(screen.getByRole("button", { name: /all/i })).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /active/i })).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /done/i })).toBeInTheDocument();
